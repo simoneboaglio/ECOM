@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" role="img" aria-label="Illustration of five connected nodes representing one ecommerce system, with an ascending growth line">
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121812"/>
+      <stop offset="100%" stop-color="#0a0d0b"/>
+    </linearGradient>
+    <linearGradient id="heroLine" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24b077"/>
+      <stop offset="100%" stop-color="#3ddc97"/>
+    </linearGradient>
+    <filter id="heroGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="480" height="600" fill="url(#heroBg)"/>
+
+  <!-- faint texture grid -->
+  <g fill="#3ddc97" opacity="0.06">
+    <circle cx="40" cy="40" r="1.6"/><circle cx="90" cy="40" r="1.6"/><circle cx="140" cy="40" r="1.6"/><circle cx="190" cy="40" r="1.6"/><circle cx="240" cy="40" r="1.6"/><circle cx="290" cy="40" r="1.6"/><circle cx="340" cy="40" r="1.6"/><circle cx="390" cy="40" r="1.6"/><circle cx="440" cy="40" r="1.6"/>
+    <circle cx="40" cy="90" r="1.6"/><circle cx="90" cy="90" r="1.6"/><circle cx="140" cy="90" r="1.6"/><circle cx="190" cy="90" r="1.6"/><circle cx="240" cy="90" r="1.6"/><circle cx="290" cy="90" r="1.6"/><circle cx="340" cy="90" r="1.6"/><circle cx="390" cy="90" r="1.6"/><circle cx="440" cy="90" r="1.6"/>
+  </g>
+
+  <!-- connecting lines between the 5 system nodes -->
+  <g stroke="#3ddc97" stroke-width="1.2" opacity="0.35" fill="none">
+    <line x1="120" y1="180" x2="360" y2="150"/>
+    <line x1="360" y1="150" x2="330" y2="330"/>
+    <line x1="330" y1="330" x2="140" y2="380"/>
+    <line x1="140" y1="380" x2="100" y2="230"/>
+    <line x1="100" y1="230" x2="120" y2="180"/>
+    <line x1="120" y1="180" x2="330" y2="330"/>
+    <line x1="360" y1="150" x2="140" y2="380"/>
+  </g>
+
+  <!-- system nodes -->
+  <g>
+    <circle cx="120" cy="180" r="7" fill="#0a0d0b" stroke="#3ddc97" stroke-width="2"/>
+    <circle cx="360" cy="150" r="7" fill="#0a0d0b" stroke="#3ddc97" stroke-width="2"/>
+    <circle cx="330" cy="330" r="9" fill="#3ddc97" filter="url(#heroGlow)"/>
+    <circle cx="140" cy="380" r="7" fill="#0a0d0b" stroke="#3ddc97" stroke-width="2"/>
+    <circle cx="100" cy="230" r="7" fill="#0a0d0b" stroke="#3ddc97" stroke-width="2"/>
+  </g>
+
+  <!-- ascending growth line -->
+  <polyline points="60,520 150,480 220,495 300,410 380,430 430,320" fill="none" stroke="url(#heroLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#heroGlow)"/>
+  <circle cx="430" cy="320" r="5" fill="#3ddc97"/>
+
+  <!-- baseline -->
+  <line x1="40" y1="540" x2="440" y2="540" stroke="#f3f5f1" stroke-opacity="0.08" stroke-width="1"/>
+</svg>

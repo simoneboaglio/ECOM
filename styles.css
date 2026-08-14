@@ -174,20 +174,15 @@ section { padding: 88px 0; }
 .hero-actions { display: flex; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
 .hero-microtrust { margin-top: 20px; font-size: 0.85rem; color: var(--text-faint); }
 
-.photo-placeholder {
+.photo-frame {
   aspect-ratio: 4/5;
   border-radius: var(--radius);
-  border: 1.5px dashed var(--card-border);
-  background: linear-gradient(160deg, var(--card), var(--bg-alt));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  color: var(--text-faint);
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  background: var(--bg-alt);
 }
-.photo-placeholder span { font-size: 0.85rem; }
-.photo-placeholder.small { aspect-ratio: 4/3; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-frame.small { aspect-ratio: 4/3; }
 
 /* ===== Stat strip ===== */
 .stat-strip {

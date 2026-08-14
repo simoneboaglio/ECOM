@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Illustration of a coffee cup with steam rising into an ascending growth line, symbolizing the journey from a coffee-shop job to building ecommerce stores">
+  <defs>
+    <linearGradient id="storyBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10140f"/>
+      <stop offset="100%" stop-color="#0a0d0b"/>
+    </linearGradient>
+    <linearGradient id="storyLine" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24b077"/>
+      <stop offset="100%" stop-color="#3ddc97"/>
+    </linearGradient>
+    <filter id="storyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="480" height="360" fill="url(#storyBg)"/>
+
+  <!-- coffee cup, simple line art -->
+  <g stroke="#a4ada2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 200 L100 270 Q102 285 118 285 L160 285 Q176 285 178 270 L188 200 Z"/>
+    <path d="M188 212 Q220 212 220 238 Q220 264 188 262"/>
+    <ellipse cx="139" cy="200" rx="49" ry="8"/>
+  </g>
+  <line x1="95" y1="285" x2="183" y2="285" stroke="#6f776c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- steam rising and morphing into the growth line -->
+  <path d="M120 185 Q110 165 122 148 Q132 133 120 115" stroke="#6f776c" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M150 185 Q140 160 154 140" stroke="#6f776c" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- ascending line picking up from the steam, arcing across the page -->
+  <polyline points="150,185 190,140 250,155 300,95 360,110 430,55" fill="none" stroke="url(#storyLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#storyGlow)"/>
+  <circle cx="430" cy="55" r="6" fill="#3ddc97"/>
+
+  <!-- baseline -->
+  <line x1="40" y1="310" x2="440" y2="310" stroke="#f3f5f1" stroke-opacity="0.08" stroke-width="1"/>
+</svg>
