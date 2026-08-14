@@ -459,6 +459,29 @@ section { padding: 88px 0; }
 .testimonial-card.placeholder p { color: var(--text-faint); font-style: italic; font-size: 0.92rem; }
 .quote-mark { font-size: 2rem; color: var(--text-faint); line-height: 1; display: block; margin-bottom: 8px; }
 
+.testimonial-card.example {
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.example-tag {
+  display: inline-block;
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 4px;
+}
+.testimonial-card.example p { font-size: 0.9rem; color: var(--text-muted); }
+.testimonial-card.example strong { color: var(--text); }
+
 /* ===== FAQ / accordion ===== */
 .accordion { display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
 .accordion-item {
